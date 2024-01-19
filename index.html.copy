@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Page is responsive-->
+    <meta name="description" content="Portfilo for aspiring Cybersecurity student majoring in Computer Science and Applied Cryptography. I hope to show off my many projects along with my achievements thus far."/> <!-- Description for search engines-->
+
+    <title>Marvin Fung's Portfilo</title>
+
+    <link rel="stylesheet" href="css/dark-theme.css"/>
+
+    <!-- favicon related links TBA -->
+</head>
+
+<body>
+    <header id="main-header" class="content-wrap">
+    <!-- Logo -->
+    <figure>
+        <a href="index.html"><img src="images/logo.gif" width="100px" height="100px"/></a>
+    </figure>
+    <!-- <h1 id="logo"> -->
+    <!--     <a href="index.html">MF</a> -->
+    <!-- </h1> -->
+
+    <!-- Navbar -->
+    <nav id="navbar" role="navigation" aria-label="main nav">
+    <ul>
+        <li><a href="index.html" class="current-page">          Home        </a></li>
+        <li><a href="technical.html">                           Projects    </a></li>
+        <li><a href="resume.html">                              Resume      </a></li>
+        <li><a href="service.html">                             Service     </a></li>
+        <li><a href="ai-generated.html">                        AI Pages    </a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <!-- Connections -->
+    <footer class="content-wrap">
+    <ul>
+        <li><a href="https://github.com/mfung37">                        Professtional Github   </a></li>
+        <li><a href="https://github.com/marfung37">                      Personal Github        </a></li>
+        <li><a href="https://www.linkedin.com/in/marvin-fung-902892216"> Linked In              </a></li>
+    </ul>
+    </footer>
+</body>
+
+</html>
