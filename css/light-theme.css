@@ -1,0 +1,18 @@
+/* Color Scheme
+ * text: #000000
+ * #AAFAC8
+ * #C7FFED
+ * #BBC8CA
+ * #B592A0
+ * #9C7178
+ */
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --aquamarine: #000000;
+    --celeste: #000000;
+    --silver: #000000;
+    --rosequartz: #000000;
+    --darkpink: #000000;
+}
