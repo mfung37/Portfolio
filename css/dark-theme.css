@@ -1,0 +1,84 @@
+/* Color Scheme
+ * text: #000000
+ * #AAFAC8
+ * #C7FFED
+ * #BBC8CA
+ * #B592A0
+ * #9C7178
+ */
+
+/* Fonts
+ * JetsBrain Mono
+ * Merriweather
+ * Sans serif
+ */
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --aquamarine: #AAFAC8;
+    --celeste: #C7FFED;
+    --silver: #BBC8CA;
+    --rosequartz: #B592A0;
+    --darkpink: #9C7178;
+}
+
+/* Global */
+
+body {
+    font-family: "JetsBrain Mono", merriweather, sans-serif;
+}
+
+.content-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+#main-header {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+}
+
+#main-header a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo a {
+    padding: 0.5em;
+}
+
+#navbar {
+    grid-column: 2 / 5;
+    grid-row: 1;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+#navbar a {
+    padding: 2em;
+    display: block;
+}
+
+#navbar a:hover {
+    background: var(--darkpink);
+}
