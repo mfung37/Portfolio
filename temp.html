@@ -8,6 +8,7 @@
     <title>Marvin Fung's Portfilo</title>
 
     <link rel="stylesheet" href="css/dark-theme.css"/>
+    <link rel="stylesheet" href="css/basic-classes.css"/>
 
     <!-- favicon related links TBA -->
 </head>
@@ -15,12 +16,11 @@
 <body>
     <header id="main-header" class="content-wrap">
     <!-- Logo -->
-    <figure>
-        <a href="index.html"><img src="images/logo.gif" width="100px" height="100px"/></a>
+    <figure id="logo" class="container">
+        <a href="index.html">
+            <img src="images/logo.gif" width="100px" height="100px"/>
+        </a>
     </figure>
-    <!-- <h1 id="logo"> -->
-    <!--     <a href="index.html">MF</a> -->
-    <!-- </h1> -->
 
     <!-- Navbar -->
     <nav id="navbar" role="navigation" aria-label="main nav">
@@ -29,21 +29,32 @@
         <li><a href="technical.html">       Projects    </a></li>
         <li><a href="resume.html">          Resume      </a></li>
         <li><a href="service.html">         Service     </a></li>
-        <li><a href="ai-generated.html">    AI Pages    </a></li>
+        <li><a href="ai-generated.html">    AI Page     </a></li>
     </ul>
     </nav>
-
     </header>
 
-    
-
-
     <!-- Connections -->
-    <footer class="content-wrap">
+    <footer id="main-footer" class="content-wrap">
     <ul>
-        <li><a href="https://github.com/mfung37">                        Professtional Github   </a></li>
-        <li><a href="https://github.com/marfung37">                      Personal Github        </a></li>
-        <li><a href="https://www.linkedin.com/in/marvin-fung-902892216"> Linked In              </a></li>
+        <li><a href="https://github.com/mfung37">                        
+            <figure>
+            <img src="images/github-icon.png" width="50px" height="50px"/>
+            <figcaption>School</figcaption>
+            </figure>
+        </a></li>
+        <li><a href="https://github.com/marfung37">
+            <figure>
+            <img src="images/github-icon.png" width="50px" height="50px"/>
+            <figcaption>Personal</figcaption>
+            </figure>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/marvin-fung-902892216"> 
+            <figure>
+            <img src="images/linkedin.png" width="50px" height="50px"/>
+            <figcaption>Linkedin</figcaption>
+            </figure>
+        </a></li>
     </ul>
     </footer>
 </body>
