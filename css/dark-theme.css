@@ -29,6 +29,10 @@ body {
     font-family: "JetsBrain Mono", merriweather, sans-serif;
 }
 
+a:hover {
+    color: var(--celeste);
+}
+
 .content-wrap {
     max-width: 1000px;
     margin: 0 auto;
@@ -37,9 +41,9 @@ body {
 /* Header */
 #main-header {
     background-color: var(--black);
-    width: 100%;
     overflow: hidden;
-    display: grid;
+    width: 100%;
+    height: 120px;
 }
 
 #main-header a {
@@ -47,11 +51,18 @@ body {
     text-decoration: none;
 }
 
+#logo {
+    float: left;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
 #navbar {
-    padding: 0 10px;
     float: right;
-    grid-column: 2 / 5;
-    grid-row: 1;
+    margin: 10px;
+    height: 120px;
 }
 
 #navbar ul {
@@ -89,7 +100,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
 
     height: 100%;
@@ -97,6 +108,8 @@ body {
 }
 
 #main-footer a {
+    display: block;
+
     color: var(--white);
     padding: 10px;
     text-align: center;
@@ -104,9 +117,5 @@ body {
 }
 
 #main-footer a:hover {
-    color: var(--darkpink);
-}
-
-#main-footer figure {
-    margin: 5px;
+    color: #CFA4AB;
 }
