@@ -75,7 +75,8 @@ a:hover {
 }
 
 #navbar a {
-    padding: 2em;
+    font-size: 16pt;
+    padding: 1em;
     display: block;
 }
 
@@ -123,6 +124,7 @@ a:hover {
 }
 
 .box h1 {
+    font-size: 64pt;
     margin: 0;
 }
 
@@ -171,13 +173,21 @@ a:hover {
 /* Responsive */
 @media screen and (max-width: 800px) {
     #navbar a {
-        padding: 1em;
+        font-size: 10pt;
+    }
+
+    .box h1 {
+        font-size: 48pt
     }
 }
 
 @media screen and (max-width: 650px) {
     #main-header {
         height: fit-content;
+    }
+
+    #navbar a {
+        font-size: 16pt;
     }
 
     #logo {
@@ -208,6 +218,10 @@ a:hover {
     }
 
     /* Half vertically instead */
+    #home-body {
+        flex-direction: column-reverse;
+    }
+
     .box .half {
         flex: 1 1 100%;
     }
