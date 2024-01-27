@@ -21,10 +21,12 @@
 
 body {
     font-family: "JetsBrain Mono", merriweather, sans-serif;
+    background: var(--gray4);
+    color: var(--white)
 }
 
 a:hover {
-    color: var(--celeste);
+    color: var(--gray4);
 }
 
 .content-wrap {
@@ -83,6 +85,54 @@ a:hover {
 
 #navbar a:hover {
     background: var(--gray2);
+}
+
+/* Body */
+.box {
+    background: var(--gray3);
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.box > .half {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+.box > .project > .text {
+    display: flex;
+    flex: 1 1 75%;
+}
+
+.box > .project > .img {
+    display: flex;
+    flex: 1 1 25%;
+}
+
+.box .vertical {
+    flex-direction: column;
+}
+
+.box .equal-spaced {
+    justify-content: space-evenly;
+}
+
+.box h1 {
+    margin: 0;
+}
+
+.box figure {
+    margin: 0;
+}
+
+.box .responsive-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 /* Footer */
@@ -150,6 +200,15 @@ a:hover {
 
     #navbar a {
         text-align: center;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    /* Half vertically instead */
+    .box .half {
+        flex: 1 1 100%;
     }
 
     #main-footer ul {
