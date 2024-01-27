@@ -1,3 +1,4 @@
+<!-- Template file with basic configurations-->
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
@@ -8,39 +9,69 @@
     <title>Marvin Fung's Portfilo</title>
 
     <link rel="stylesheet" href="css/dark-theme.css"/>
+    <link rel="stylesheet" href="css/basic-classes.css"/>
 
     <!-- favicon related links TBA -->
 </head>
 
 <body>
-    <header id="main-header" class="content-wrap">
-    <!-- Logo -->
-    <figure>
-        <a href="index.html"><img src="images/logo.gif" width="100px" height="100px"/></a>
-    </figure>
-    <!-- <h1 id="logo"> -->
-    <!--     <a href="index.html">MF</a> -->
-    <!-- </h1> -->
+    <header id="main-header">
+        <div class="content-wrap">
+        <!-- Logo -->
+        <figure id="logo" class="container">
+            <a href="index.html">
+                <img src="images/logo.gif" width="100px" height="100px"/>
+            </a>
+        </figure>
 
-    <!-- Navbar -->
-    <nav id="navbar" role="navigation" aria-label="main nav">
-    <ul>
-        <li><a href="index.html" class="current-page">          Home        </a></li>
-        <li><a href="technical.html">                           Projects    </a></li>
-        <li><a href="resume.html">                              Resume      </a></li>
-        <li><a href="service.html">                             Service     </a></li>
-        <li><a href="ai-generated.html">                        AI Pages    </a></li>
-    </ul>
-    </nav>
+        <!-- Navbar -->
+        <nav id="navbar" role="navigation" aria-label="main nav">
+        <ul>
+            <li><a href="index.html">           Home        </a></li>
+            <li><a href="technical.html">       Projects    </a></li>
+            <li><a href="resume.html">          Resume      </a></li>
+            <li><a href="service.html">         Service     </a></li>
+            <li><a href="ai-generated.html">    AI Page     </a></li>
+        </ul>
+        </nav>
+        </div>
     </header>
 
+
+    <p class="content-wrap">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
     <!-- Connections -->
-    <footer class="content-wrap">
+    <footer id="main-footer">
+    <div class="content-wrap">
     <ul>
-        <li><a href="https://github.com/mfung37">                        Professtional Github   </a></li>
-        <li><a href="https://github.com/marfung37">                      Personal Github        </a></li>
-        <li><a href="https://www.linkedin.com/in/marvin-fung-902892216"> Linked In              </a></li>
+        <li><a href="mailto:marfung37@tamu.edu">
+            <figure>
+            <img src="images/email-32x32.svg" width="50px" height="50px"/>
+            <figcaption>Email</figcaption>
+            </figure>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/marvin-fung-902892216"> 
+            <figure>
+            <img src="images/blackwhitelinkedin.png" width="50px" height="50px"/>
+            <figcaption>Linkedin</figcaption>
+            </figure>
+        </a></li>
+        <li><a href="https://github.com/mfung37">                        
+            <figure>
+            <img src="images/github-icon.png" width="50px" height="50px"/>
+            <figcaption>School</figcaption>
+            </figure>
+        </a></li>
+        <li><a href="https://github.com/marfung37">
+            <figure>
+            <img src="images/github-icon.png" width="50px" height="50px"/>
+            <figcaption>Personal</figcaption>
+            </figure>
+        </a></li>
     </ul>
+    </div>
     </footer>
 </body>
 
