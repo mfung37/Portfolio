@@ -36,56 +36,68 @@
         </div>
     </header>
 
-    <section class="content-wrap box">
-        <div class="flex half equal-spaced">
-            <h1 class="center">Under Construction!!</h1>
-        </div>
-    </section>
-
     <article class="content-wrap box project">
         <aside class="text">
-            <h2>Some Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Background Information</h2>
+            <p>A <u>Perfect Clear</u> (PC) is where the Tetris board becomes empty again, usually after placing 10 pieces.</p>
+            <p>There is 7 tetrominos/pieces, which are given to players in groups called bags, meaning that you're guranteed each piece within each bag.</p>
+            <p>Since a PC is usually 10 pieces, but there are 7 pieces per bag, this leads to the subsequent PC starts off with part of a bag. </p>
+            <p>Example: On 2nd PC, after placing 7 pieces then 3 pieces for 1st PC, you're left with 4 pieces from that 2nd bag at start of the 2nd PC.</p>
+            <p>These pieces leftover are called <u>saves</u> from the previous PC.</p>
+            <p>In modern tetris, a <u>hold</u> allows the player to hold a piece for later use. This hold allows for some control on the save to the next PC.</p>
+            <p>Usually when doing PCs, one would make a <u>setup</u> with 3 or 4 pieces then solve with the remaining 7 pieces that can be seen.</p>
+            <p>Further Info (link to textbook)</p>
         </aside>
         <figure class="img flex equal-spaced vertical">
-            <img src="images/pc.gif" alt="Filler image"/>
+            <img src="images/pc.gif" alt="Filler image" width="250px"/>
+            <img src="images/7bag.png" alt="7 Bag" width="250px"/>
         </figure>
     </article>
 
     <article class="content-wrap box project">
         <aside class="text">
-            <h2>Some Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2><a href="https://github.com/Marfung37/PC-Database">PC-Database</a></h2>
+            <p>To solve the issue that many setups tends to be too niche to be remembered along with a lack of a good centralized location with all setups, I'm working to create a database storing as many setups thus far created along with various stats of the setup including the chance to build the setup, solve the setup, save certain pieces, and minimal set of solves necessary to know. </p>
+            <h3>Scripts and plans</h3>
+            <p>Along with the data, I've created scripts to provide a setup given a queue of pieces at the start of a PC along with calculating the average chance to solve with a set of setups. In addition, I'm still working on extensive checks to be completely certain few mistakes get through when adding setups. After these checks are up to my standard, I intend to create a user interface to view and edit the database, which would allow others to add setups as they find them. [Python]</p>
         </aside>
         <figure class="img flex equal-spaced vertical">
-            <img src="images/pc.gif" alt="Filler image"/>
+            <img src="images/PCDB.png" alt="Database with various data for setups for 1st PC" width="250px"/>
         </figure>
     </article>
 
     <article class="content-wrap box project">
         <aside class="text">
-            <h2>Some Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2><a href="https://github.com/Marfung37/hold-generalizer">hold-generalizer</a></h2>
+            <p>A professional software engineering focused project with the intent of simulating if a user was able to hold some n number of pieces rather than the normal one piece.</p>
+            <p>This program is able to generate the necessary data to extract chance to build/solve a setup and chance for various saves.</p>
+            <h3>Underlying logic description</h3>
+            <p>A term I use is a n-hold permutation after looking into how multiple holds would work.</p> 
+            <p>By swapping pieces n distance away from the original location to the right, this produces queues that are equivalent to having the ability hold n pieces.</p>
+            <p>Using these queues without holding to try to solve or build setups will produce valid results, which is how this program is mostly based on.</p>
+            <p>[C++]</p>
+        </aside>
+    </article>
+
+    <article class="content-wrap box project">
+        <aside class="text">
+            <h2><a href="https://github.com/Marfung37/PC-Saves-Get">PC-Saves-Get</a></h2>
+            <p>Calculate the percentage along with the minimal solves for a certain save for a given setup.</p>
+            <p>It uses a custom parser to handle various saves input along with ability to store these long saves input in a file and reference them using a key.</p>
+            <p>[Python]</p>
         </aside>
         <figure class="img flex equal-spaced vertical">
-            <img src="images/pc.gif" alt="Filler image"/>
+            <img src="images/saves_in.png" alt="Input setup"/>
+            <img src="images/saves_out.gif" alt="Minimal set of solves to save O"/>
         </figure>
     </article>
 
     <article class="content-wrap box project">
         <aside class="text">
-            <h2>Some Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </aside>
-        <figure class="img flex equal-spaced vertical">
-            <img src="images/pc.gif" alt="Filler image"/>
-        </figure>
-    </article>
-
-    <article class="content-wrap box project">
-        <aside class="text">
-            <h2>Some Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2><a href="https://github.com/Marfung37/GluingFumens">GluingFumens</a></h2>
+            <p>This program finds the pieces in a board and show each piece per page.</p>
+            <p>This uses recursion trying place corresponding piece at the color and returns only results with no color squares left.</p>
+            <p>[Javascript]</p>
         </aside>
         <figure class="img flex equal-spaced vertical">
             <img src="images/pc.gif" alt="Filler image"/>

@@ -25,6 +25,10 @@ body {
     color: var(--white)
 }
 
+a {
+    color: var(--white);
+}
+
 a:hover {
     color: var(--gray4);
 }
