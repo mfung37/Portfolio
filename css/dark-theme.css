@@ -127,7 +127,7 @@ a:hover {
     justify-content: space-evenly;
 }
 
-.box h1 {
+.box #Name {
     font-size: 64pt;
     margin: 0;
 }
