@@ -1,78 +1,145 @@
-<!-- Template file with basic configurations-->
+
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Page is responsive-->
-
-    <title>Marvin Fung's Portfilo</title>
-
-    <link rel="stylesheet" href="css/dark-theme.css"/>
-    <link rel="stylesheet" href="css/basic-classes.css"/>
-
-    <!-- favicon related links TBA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Fung's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: black;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px; /* Additional padding at the bottom */
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+        .footer ol {
+            text-align: left; /* Remove center alignment */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-    <header id="main-header">
-        <div class="content-wrap">
-        <!-- Logo -->
-        <figure id="logo" class="container">
-            <a href="index.html">
-                <img src="images/logo.gif" width="100px" height="100px"/>
-            </a>
-        </figure>
-
-        <!-- Navbar -->
-        <nav id="navbar" role="navigation" aria-label="main nav">
-        <ul>
-            <li><a href="index.html">           Home        </a></li>
-            <li><a href="technical.html">       Projects    </a></li>
-            <li><a href="resume.html">          Resume      </a></li>
-            <li><a href="service.html">         Service     </a></li>
-            <li><a class="current-page" href="ai-generated.html">    AI Page     </a></li>
-        </ul>
+    <header>
+        <h1>AI in Education</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="technical.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="service.html">Service</a>
+            <a href="ai-generated.html" style="text-decoration: underline;">AI Page</a>
         </nav>
-        </div>
     </header>
-
-    <section class="content-wrap box">
-        <div class="flex half equal-spaced">
-            <h1 class="center">Under Construction!!</h1>
+    <div class="content">
+        <img src="images/ai-education.png" alt="Large Image" style="width: 100%;">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Personalized Learning</h2>
+                <p>AI in education enables personalized learning experiences tailored to individual student needs and preferences. Through advanced algorithms and machine learning, educational platforms can analyze student performance data and provide customized learning paths. Students receive targeted resources, adaptive assessments, and feedback, fostering a more engaging and effective learning environment.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Enhanced Student Engagement</h2>
+                <p>AI technology enhances student engagement by creating interactive and immersive learning experiences. Virtual tutors, chatbots, and AI-powered learning assistants provide immediate assistance and support to students, encouraging active participation and collaboration. By integrating multimedia content and gamification elements, AI-driven educational tools captivate students' interest and motivate them to explore complex concepts.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Real-Time Feedback</h2>
+                <p>AI enables educators to deliver real-time feedback to students, facilitating continuous improvement and mastery of skills. Automated grading systems, natural language processing, and sentiment analysis algorithms assess student work efficiently and provide constructive feedback instantly. This timely feedback loop empowers students to identify areas of strength and weakness, fostering self-directed learning and academic growth.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Adaptive Learning Paths</h2>
+                <p>AI technology enables adaptive learning paths that cater to each student's unique learning style, pace, and proficiency level. By analyzing students' performance data and learning behaviors, AI algorithms dynamically adjust instructional content and difficulty levels. This personalized approach ensures that students receive the right support and resources at the appropriate time, maximizing learning outcomes and academic success.</p>
+            </div>
         </div>
-    </section>
-
-    <!-- Connections -->
-    <footer id="main-footer">
-    <div class="content-wrap">
-    <ul>
-        <li><a href="mailto:marfung37@tamu.edu">
-            <figure>
-            <img src="images/email-32x32.svg" width="50px" height="50px"/>
-            <figcaption>Email</figcaption>
-            </figure>
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/marvin-fung-902892216"> 
-            <figure>
-            <img src="images/blackwhitelinkedin.png" width="50px" height="50px"/>
-            <figcaption>Linkedin</figcaption>
-            </figure>
-        </a></li>
-        <li><a href="https://github.com/mfung37">                        
-            <figure>
-            <img src="images/github-icon.png" width="50px" height="50px"/>
-            <figcaption>School</figcaption>
-            </figure>
-        </a></li>
-        <li><a href="https://github.com/marfung37">
-            <figure>
-            <img src="images/github-icon.png" width="50px" height="50px"/>
-            <figcaption>Personal</figcaption>
-            </figure>
-        </a></li>
-    </ul>
     </div>
-    </footer>
-</body>
+    <button class="accordion">Click to hide/show the prompt</button>
+    <div class="panel">
+        <div class="footer">
+            <h2>ChatGPT Prompts</h2>
+            <p>Everything on this webpage was created with ChatGPT.</p>
+            <ol>
+                <li>Generate a webpage with a black header with a navbar in white text for Home, Projects, Resume, Service, and AI Page, which AI Page is underlined. Put a large image for the body along with a 2x2 grid describing the various benefits of AI technology in education. In the footer, make it black along with this prompt in it.</li>
+                <li>Use an accordion to enable the user to hide the text in the footer.</li>
+                <li>Change the href in the navbar for Home to be index.html, Projects to be technical.html, Resume to resume.html, Service to be service.html and AI Page to be ai-generated.html.</li>
+                <li>Change the title to be Marvin Fung's portfolio and add a text in the header to say AI in Education.</li>
+                <li>give more details to the benefits of ai in education in the bodies. Give around 1-2 paragraphs each</li>
+                <li>Center the h1 heading in the header</li> 
+                <li>do not center the ordered list in the footer and give more padding at the bottom of the h1 tag in the header</li>
+            </ol>
+            <h2><a href="https://www.veed.io/tools/ai-image-generator/ai-background-generator">AI Image Generator</a> Prompts</h2>
+            <p>artifical intelligence helping in education</p>
+        </div>
+    </div>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
 </html>
