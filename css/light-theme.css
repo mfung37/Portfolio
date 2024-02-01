@@ -31,5 +31,18 @@ body {
 /* Header */
 #main-header {
     background-color: var(--rosequartz);
+    position: fixed;
+    left: 0;
+    z-index: 99;
 }
 
+
+/* Footer */
+
+#main-footer img {
+    filter: invert(1);
+}
+
+#toggle-style {
+    cursor: pointer;
+}
