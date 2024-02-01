@@ -105,27 +105,31 @@ a:hover {
 
 .box > .half {
     flex: 1 1 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
+.box > .half.reverse {
+    flex-direction: row;
+}
+
+.box > .half.text {
+    display: initial;
 }
 
 .box.project > .text {
     flex: 1 1 75%;
+    padding: 5px;
 }
 
 .box.project > .img {
     flex: 1 1 25%;
+    padding: 5px;
 }
 
-.box .flex {
-    display: flex;
-}
-
-.box .vertical {
-    flex-direction: column;
-}
-
-.box .equal-spaced {
-    justify-content: space-evenly;
-}
 
 .box #Name {
     font-size: 64pt;
