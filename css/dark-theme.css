@@ -164,6 +164,10 @@ a:hover {
     padding: 0;
 }
 
+#main-footer li {
+    max-width: 150px;
+}
+
 #main-footer a {
     display: block;
 
@@ -175,6 +179,27 @@ a:hover {
 }
 
 #main-footer a:hover {
+    color: var(--gray4);
+}
+
+#main-footer figure {
+    margin: 0;
+}
+
+#toggleStyle {
+    cursor: pointer;
+
+    display: block;
+
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#toggleStyle:hover {
     color: var(--gray4);
 }
 

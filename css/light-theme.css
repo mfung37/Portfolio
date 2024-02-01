@@ -16,27 +16,20 @@
 :root {
     --black: #000000;
     --white: #FFFFFF;
-    --aquamarine: #000000;
-    --celeste: #000000;
-    --silver: #000000;
-    --rosequartz: #000000;
-    --darkpink: #000000;
+    --aquamarine: #AAFAC8;
+    --celeste: #C7FFED;
+    --silver: #BBC8CA;
+    --rosequartz: #B592A0;
+    --darkpink: #9C7178;
 }
 
 body {
-    font-family: "JetsBrain Mono", merriweather, sans-serif;
+    font-family: "Lato Extended", Helvetica, sans-serif;
 }
 
 
 /* Header */
 #main-header {
-    background-color: white;
+    background-color: var(--rosequartz);
 }
 
-#logo {
-    color: black;
-}
-
-#navbar {
-    text-decoration: none;
-}
