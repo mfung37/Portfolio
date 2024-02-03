@@ -18,8 +18,8 @@
     --white: #FFFFFF;
     --aquamarine: #99E9B7;
     --celeste: #EBFFF9;
-    --silver: #BBC8CA;
-    --rosequartz: #e6bccd; 
+    --silver: #CCD9DB;
+    --lightpink: lightpink; 
     --darkpink: #876369; 
 }
 
@@ -31,7 +31,7 @@ body {
 
 /* Header */
 #main-header {
-    background-color: var(--rosequartz);
+    background-color: var(--lightpink);
     position: fixed;
     top: 0;
     left: 0;
@@ -180,7 +180,7 @@ body {
 
 /* Footer */
 #main-footer {
-    background-color: var(--rosequartz);
+    background-color: var(--lightpink);
     position: fixed;
     bottom: 0;
     left: 0;
