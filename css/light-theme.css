@@ -90,9 +90,10 @@ body {
 }
 
 .box {
+    background-color: var(--silver);
     padding: 15px;
-    margin: 10px auto;
-    /* border-radius: 25px; */
+    margin: 10px;
+    border-radius: 25px;
 
     display: flex;
     flex-direction: column;
@@ -107,6 +108,10 @@ body {
     justify-content: space-evenly;
 }
 
+.box .half.text {
+    align-items: initial;
+}
+
 .box .responsive-img {
     width: 100%;
     max-width: 500px;
@@ -116,8 +121,6 @@ body {
 .box.project {
     flex-direction: column-reverse;
     flex: 1 1 40%;
-    background-color: var(--silver);
-    margin: 10px;
 }
 
 .box.project > .text {
@@ -133,9 +136,46 @@ body {
     justify-content: center;
 }
 
+#home-body {
+    background-color: inherit;
+}
 
 #home-body .responsive-img {
     max-width: 1000px;
+}
+
+#resume.box {
+    background-color: inherit;
+
+    padding: inherit;
+    margin: inherit;
+    border-radius: inherit;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#resume.box .half {
+    background-color: var(--silver);
+    padding: 25px;
+    margin: 10px;
+    border-radius: 25px;
+
+    height: auto;
+}
+
+#resume.box .half.text h2 {
+    text-align: center;
+}
+
+#resume .responsive-img {
+    max-width: 600px;
+    height: auto;
+}
+
+#service-tsos {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 /* Footer */
